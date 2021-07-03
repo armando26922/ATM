@@ -2,7 +2,94 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h1>ATM - Inicio</h1>
+<textarea id="campo" readonly name="campo" rows="4" cols="50"  >
+ </textarea>
+
+
+ 
+
+    <table class="table_teclado">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="table_teclado">
+
+        <tr>
+            <td>Aceptar</td>
+            <td>Limpiar</td>
+            <td>Salir</td>
+
+        </tr>
+    </table>
+    <script src="~/lib/jquery/jquery.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var contador = 0;
+            $('#campo').val("ingrese   un número de tarjeta de 16 dígitos");
+            $('.table_teclado tr td').click(function () {
+                var number = $(this).text();
+                if (number != "") {
+                    if (contador == 0) {
+                        $('#campo').val("");
+
+                    }
+                    contador = contador + 1;
+
+                    if (number == "Limpiar") {
+                        $('#campo').val("");
+                        contador = 0;
+                        $('#campo').val("ingrese   un número de tarjeta de 16 dígitos");
+
+                    }
+                    else if (number == "Aceptar")
+                    {
+                        //$.ajax({
+                        //    url: "Home/VerificarTarjeta", data: { NroTarjeta: $('#campo').val() }
+                        //}).done(function (data) {
+                        //    alert(data);
+                        //});
+                        window.location.href = '/Home/VerifyCards?NumberCard=' + $('#campo').val();
+
+                    }
+                    else {
+                        if (contador == 5) {
+                            number = "-" + number
+                            contador = 1;
+                        }
+                        if (number == '') {
+                            $('#campo').val($('#campo').val().substr(0, $('#campo').val().length - 1)).focus();
+                        }
+                        else {
+                            $('#campo').val($('#campo').val() + number).focus();
+                        }
+                    }
+                }
+
+            });
+        });
+    </script>
 </div>

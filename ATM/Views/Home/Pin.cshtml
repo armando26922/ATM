@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Pin";
+}
+<h1>ATM - Pin</h1>
+
+<h2 id="NumberCard">@ViewData["NumberCard"]</h2>
+
+
+<div>
+
+<textarea id="campo" readonly name="campo" rows="4" cols="50">
+ </textarea>
+
+
+
+
+    <table class="table_teclado">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>0</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="table_teclado">
+
+        <tr>
+            <td>Aceptar</td>
+            <td>Limpiar</td>
+            <td>Salir</td>
+
+        </tr>
+    </table>
+    <script src="~/lib/jquery/jquery.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript" src="~/js/Pin.js"></script>
+
+</div>

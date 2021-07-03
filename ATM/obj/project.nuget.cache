@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "cGp1jUfjbaO3kMWZieQCY9UgZR1YbQb7yQ2EMdl8c7BJxWDACb7SBdMAwxNvfzQvw21gqhAeNAPe6B890RNFLw==",
+  "dgSpecHash": "9dvUZjmP1sFYy3kVzpRjFoJXKb+pcZFtoC6XhsZCnamJloU7tN8hPEzrhq1zQOreEvK16tkn7+nNQi1sMXtSOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahernandez\\Source\\Repos\\ATM\\ATM\\ATM.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ahernandez\\source\\repos\\ATM\\ATM\\ATM.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ahernandez\\.nuget\\packages\\microsoft.extensions.apidescription.client\\3.0.0\\microsoft.extensions.apidescription.client.3.0.0.nupkg.sha512",
+    "C:\\Users\\ahernandez\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\ahernandez\\.nuget\\packages\\nswag.apidescription.client\\13.0.5\\nswag.apidescription.client.13.0.5.nupkg.sha512",
+    "C:\\Users\\ahernandez\\.nuget\\packages\\nswag.msbuild\\13.0.5\\nswag.msbuild.13.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
